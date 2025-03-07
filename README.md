@@ -1,6 +1,6 @@
-#Lab 3-1 Commands#
+-Lab 3-1 Commands-
 
-#Video 1:#
+-Video 1:-
 
 cd ~
 git clone https://github.com/Muhammad-Musa-0/SQPM-LAB-3-1/
@@ -20,9 +20,9 @@ kubectl expose deployment binarycalculator-deployment --type=LoadBalancer --name
 kubectl get service
 
 
-#Video 2:#
+-Video 2:-
 
-#METHOD 1:#
+-METHOD 1:-
 
 kubectl create deployment mysql-deployment --image mysql/mysql-server --port=3306 
 
@@ -36,7 +36,7 @@ kubectl delete deployment mysql-deployment
 
 kubectl delete service mysql-service 
 
-#METHOD 2:#
+-METHOD 2:-
 
 git clone https://github.com/Muhammad-Musa-0/SQPM-LAB-3-1/
 
