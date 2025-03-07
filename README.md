@@ -40,7 +40,9 @@ kubectl delete service mysql-service
 
 git clone https://github.com/Muhammad-Musa-0/SQPM-LAB-3-1/
 
-cd SQPM-LAB-3-1/MySQL
+cd SQPM-LAB-3-1/sqpm_lab3-1/MySQL
+
+kubectl create -f mysql-deploy.yaml
 
 kubectl create -f mysql-service.yaml
 
@@ -48,7 +50,7 @@ kubectl get service
 
 mysql -uuser -psofe3980u -h<IP-Address>
 
-cd SOFE3980U-Lab3-Part1/MySQL
+cd /home/mussy0599/SOFE3980U-Lab3-Part1/MySQL
 
 kubectl delete -f mysql-service.yaml
 kubectl delete -f mysql-deployment.yaml
