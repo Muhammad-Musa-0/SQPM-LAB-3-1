@@ -30,18 +30,18 @@ public class BinaryController {
 		{
 			case "+":
 				model.addAttribute("result", Binary.add(number1,number2).getValue());
-				return "result";
+				break;
 			case "*":
-              			  model.addAttribute("result", Binary.MULTIPLY(number1, number2).getValue());
-            			return "result"; 
+              			model.addAttribute("result", Binary.MULTIPLY(number1, number2).getValue());
+            			break;
         		case "&":
               			model.addAttribute("result", Binary.AND(number1, number2).getValue());
-              			return "result";
+              			break;
             		case "|":
                 		model.addAttribute("result", Binary.OR(number1, number2).getValue());
-             			return "result";
+             			break;
 			default:
-				return "Error";
+				model.addAttribute("result", "Error: Invalid operator");
 		}
 		return "result";
 	}
