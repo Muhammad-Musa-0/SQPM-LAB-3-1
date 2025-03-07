@@ -22,3 +22,14 @@ kubectl get service
 
 Video 2:
 
+kubectl create deployment mysql-deployment --image mysql/mysql-server --port=3306 
+
+kubectl expose deployment mysql-deployment --type=LoadBalancer --name=mysql-service 
+
+kubectl get service
+
+mysql -uuser -psofe3980u -h<IP-Address>
+
+kubectl delete deployment mysql-deployment 
+
+kubectl delete service mysql-service 
