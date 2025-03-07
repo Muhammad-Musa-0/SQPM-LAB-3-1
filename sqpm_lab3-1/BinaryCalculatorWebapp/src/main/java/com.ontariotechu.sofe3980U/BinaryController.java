@@ -32,14 +32,17 @@ public class BinaryController {
 				model.addAttribute("result", Binary.add(number1,number2).getValue());
 				return "result";
 			case "*":
-                model.addAttribute("result", Binary.MULTIPLY(number1, number2).getValue());
-                break;
+              			  model.addAttribute("result", Binary.MULTIPLY(number1, number2).getValue());
+            			return "result"; 
+				break;
             case "&":
                 model.addAttribute("result", Binary.AND(number1, number2).getValue());
-                break;
+                return "result";
+				break;
             case "|":
                 model.addAttribute("result", Binary.OR(number1, number2).getValue());
-                break;
+             return "result";
+				break;
 			default:
 				return "Error";
 		}
