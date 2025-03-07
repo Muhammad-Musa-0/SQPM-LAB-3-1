@@ -43,5 +43,6 @@ public class BinaryController {
 			default:
 				return "Error";
 		}
+		return "result";
 	}
 }
